@@ -7,4 +7,3 @@ media_ponderada = (2 * nota1 + 3 * nota2) / (2 + 3)
 
 # Mostrando o resultado
 print("A média ponderada das notas é: ", media_ponderada)
-
