@@ -1,17 +1,10 @@
-# Ler o número inteiro
-numero = int(input("Digite um número inteiro de até três dígitos: "))
+# Recebendo as notas do usuário
+nota1 = float(input("Digite a primeira nota (peso 2): "))
+nota2 = float(input("Digite a segunda nota (peso 3): "))
 
-# Garantir que o número esteja entre 0 e 999
-if not (0 <= numero <= 999):
-    print("Número fora do intervalo permitido.")
-else:
-    # Extrair centena, dezena e unidade
-    centena = numero // 100
-    resto = numero % 100
-    dezena = resto // 10
-    unidade = resto % 10
+# Calculando a média ponderada
+media_ponderada = (2 * nota1 + 3 * nota2) / (2 + 3)
 
-    # Imprimir os resultados sem f-string
-    print("CENTENA =", centena)
-    print("DEZENA =", dezena)
-    print("UNIDADE =", unidade)
+# Mostrando o resultado
+print("A média ponderada das notas é: ", media_ponderada)
+
