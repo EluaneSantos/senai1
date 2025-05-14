@@ -1,8 +1,8 @@
-from Flask import Flask, render_template, request
+from flask import Flask, render_template, request
 import os
 # Define a pasta onde estão os arquivos HTML (neste caso, a raiz do projeto)
-template_dir = os. path.abspath(os.path.dirname(__file__))
-app = Flask(__name__, templante_folder=template_dir)
+template_dir = os.path.abspath(os.path.dirname(__file__))
+app = Flask(__name__, template_folder=template_dir)
 
 # direcionamento para base do index HTML
 @app.route("/")
